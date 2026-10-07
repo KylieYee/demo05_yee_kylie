@@ -1,33 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
+    <nav class="navbar navbar-expand-lg" style="background-color: lightblue">
+      <div class="container-fluid">
+        <a
+          class="drink-water"
+          href="https://en.wikipedia.org/wiki/Drinking_water"
+          style="text-decoration: none; color: black;"
+        >
+          <img src="./images/water.jpg" height="36" />
+          Drink Water
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Suggested Water</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Water Types
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tap Water</a></li>
+                <li><a class="dropdown-item" href="#">Ice Water</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Salt Water</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <!-- Stuff for body goes here -->
+    <div class="px-5 py-3 mb-4 bg-body-tertiary rounded-3">
+      <div
+        class="container-fluid py-5"
+        style="
+          background-image: url(./images/ocean.jpg);
+          background-size: cover;
+        "
+      >
+        <h1 class="display-5 fw-bold" style="color: white">
+          Check out Ocean Water
+        </h1>
+        <p class="col-md-8 fs-4" style="color: white">
+          Ocean Water is an acquired taste. It can be fresh, or salty. Creatures
+          lurk in ocean water because it is water and they like water too.
+        </p>
+        <button class="btn btn-primary btn-lg" type="button">Go -></button>
+      </div>
+    </div>
 
-
+    <div class="row row-cols-1 row-cols-md-3 g-4 px-5 py-3">
+      <div class="col">
+        <div class="card">
+          <img src="./images/tapwater.jpg" class="card-img-top" alt="Tap Water" style="height: 250px; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title">Tap Water</h5>
+            <p class="card-text">
+              Ice Water can be found in households
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./images/icewater.jpg" class="card-img-top" alt="Ice Water" style="height: 250px; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title">Ice Water</h5>
+            <p class="card-text">
+              Ice Water can be found both in the wild or from fridges
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./images/saltwater.jpg" class="card-img-top" alt="Salt Water" style="height: 250px; object-fit: cover;" />
+          <div class="card-body">
+            <h5 class="card-title">Salt Water</h5>
+            <p class="card-text">
+              Salt Water can be found in some natural bodies of water
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
